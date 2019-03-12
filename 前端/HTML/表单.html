@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Form表单</title>
+</head>
+<body>
+<form action="">
+    <!--name属性是为了给服务器提供数据时用的-->
+    <p>用户名:<input name="username" type="text"></p>
+    <p>密码:<input name="password" type="password"></p>
+    <p>性别:
+        <input name="gender" type="radio" value="0">男
+        <input name="gender" type="radio" value="1">女
+    </p>
+    <p>
+        爱好:
+        <input name="hobby" type="checkbox" value="basketball">篮球
+        <input name="hobby" type="checkbox" value="soccer">足球
+        <input name="hobby" type="checkbox" value="read">读书
+    </p>
+    <p>地区:
+        <select name="from">
+            <option value="bj">北京</option>
+            <option value="sh">上海</option>
+            <option value="cq">重庆</option>
+        </select>
+    </p>
+    <p>
+        个人简介
+        <br/>
+        <textarea name="memo" id="" cols="30" rows="10"></textarea>
+    </p>
+    <p>上传头像:<input name="img" type="file" ></p>
+    <p>
+        <input type="submit" value="注册">
+    </p>
+</form>
+</body>
+</html>
