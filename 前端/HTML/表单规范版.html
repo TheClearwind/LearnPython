@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Form表单</title>
+</head>
+<body>
+<form action="">
+    <!--name属性是为了给服务器提供数据时用的-->
+    <p>
+        <label>
+            用户名:<input name="username" type="text">
+        </label>
+    </p>
+    <p>
+        <label>
+            密码:<input name="password" type="password">
+        </label>
+    </p>
+    <p> 性别:
+        <label >
+        <input name="gender" type="radio" value="0">男
+        </label>
+        <label >
+        <input name="gender" type="radio" value="1">女
+        </label>
+        <label >
+        <input checked name="gender" type="radio" value="2">保密
+        </label>
+    </p>
+    <p>
+        爱好:
+        <label >
+            <input name="hobby" type="checkbox" value="basketball">篮球
+        </label>
+        <label ><input name="hobby" type="checkbox" value="soccer">足球</label>
+        <label ><input name="hobby" type="checkbox" value="read">读书</label>
+    </p>
+    <p><label >生日:<input name="birthday" type="date"></label></p>
+    <p><label >邮箱:<input type="text" typr="email"></label></p>
+    <p><label >地区:
+        <select name="from">
+            <option value="bj">北京</option>
+            <option value="sh">上海</option>
+            <option value="cq">重庆</option>
+        </select>
+    </label>
+    </p>
+    <p>
+        <label>个人简介
+            <br/>
+            <textarea name="memo" id="" cols="30" rows="10"></textarea>
+        </label>
+    </p>
+    <p>上传头像:
+        <input name="img" type="file">
+    </p>
+    <p>
+        <input type="submit" value="注册">
+    </p>
+</form>
+</body>
+</html>
